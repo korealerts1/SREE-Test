@@ -1,25 +1,8 @@
-# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
-language: node.js
-
-# list any PHP version you want to test against
-
-# optionally specify a list of environments, for example to test different RDBMS
+language: node_js
+node_js:
+- "0.10"
 
 
-# optionally set up exclutions and allowed failures in the matrix
-
-
-# execute any number of scripts before the test run, custom env's are available as variables
-
-# omitting "script:" will default to phpunit
-# use the $DB env variable to determine the phpunit.xml to use
-
-# configure notifications (email, IRC, campfire etc)
 notifications:
-  webhooks:
-    urls:
-      - https://qa1.kore.com/hooks/7b349a4d1e2f8335fa32d3bb74f79ce6
-    on_success: [always|never|change] # default: always
-    on_failure: [always|never|change] # default: always
-    on_start: [always|never|change] # default: always
+  webhooks: https://qa1.kore.com/hooks/7b349a4d1e2f8335fa32d3bb74f79ce6
 
